@@ -13,7 +13,7 @@ def indirim_hesapla(toplam_tutar, indirim_orani):
         raise ValueError("Toplam tutar negatif olamaz.")
     
     indirim_miktari = (toplam_tutar * indirim_orani) / 100
-    return toplam_tutar - indirim_miktari
+    return toplam_tutar + indirim_miktari
 
 def odeme_yap(bakiye, odenecek_tutar):
     """
