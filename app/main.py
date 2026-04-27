@@ -1,18 +1,37 @@
-# app/main.py
 import logging
+from datetime import datetime
+from flask import Flask, request, jsonify, render_template
+from app.payment import indirim_hesapla, odeme_yap
+from flask_sqlalchemy import SQLAlchemy
 
-# Loglama Ayarları: İşlemleri 'megamarket.log' dosyasına tarihle kaydet
+# 1. Flask Uygulamasını Tanımla
+app = Flask(__name__)
+
+# 2. Loglama Ayarları
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     filename='megamarket.log',
-    filemode='a' # 'a' (append) modu üzerine ekleyerek devam eder
+    filemode='a'
 )
 
-from flask import Flask, request, jsonify, render_template
-from app.payment import indirim_hesapla, odeme_yap
+# 3. Veritabanı Ayarları
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///market.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
 
-app = Flask(__name__)
+# 4. Veritabanı Modeli
+class Islem(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    toplam_tutar = db.Column(db.Float, nullable=False)
+    indirim_orani = db.Column(db.Float, nullable=False)
+    odenecek_tutar = db.Column(db.Float, nullable=False)
+    # Varsayılan değeri yerel saate (datetime.now) çektik
+    tarih = db.Column(db.DateTime, default=datetime.now)
+
+# Veritabanını oluştur
+with app.app_context():
+    db.create_all()
 
 @app.route('/')
 def home():
@@ -21,15 +40,42 @@ def home():
 @app.route('/indirim', methods=['POST'])
 def api_indirim():
     data = request.get_json()
-    logging.info(f"İndirim isteği alındı: {data}") # İstek günlüğü
+    logging.info(f"İndirim isteği alındı: {data}")
     
     try:
-        sonuc = indirim_hesapla(data['toplam_tutar'], data['indirim_orani'])
-        logging.info(f"Hesaplama başarılı. Sonuç: {sonuc}") # Başarı günlüğü
+        toplam = data['toplam_tutar']
+        oran = data['indirim_orani']
+        sonuc = indirim_hesapla(toplam, oran)
+        
+        # VERİTABANINA KAYIT
+        yeni_islem = Islem(
+            toplam_tutar=toplam,
+            indirim_orani=oran,
+            odenecek_tutar=sonuc
+        )
+        db.session.add(yeni_islem)
+        db.session.commit()
+
+        logging.info(f"Hesaplama ve kayıt başarılı. Sonuç: {sonuc}")
         return jsonify({"yeni_tutar": sonuc, "durum": "basarili"}), 200
     except Exception as e:
-        logging.error(f"Hesaplama sırasında hata oluştu: {str(e)}") # Hata günlüğü
+        logging.error(f"Hata oluştu: {str(e)}")
         return jsonify({"hata": str(e), "durum": "basarisiz"}), 400
+
+@app.route('/gecmis')
+def gecmis_getir():
+    # En son yapılan işlemi en üstte göstermek için tarihe göre azalan sıraladık
+    islemler = Islem.query.order_by(Islem.tarih.desc()).all()
+    liste = []
+    for i in islemler:
+        liste.append({
+            "tutar": i.toplam_tutar,
+            "oran": i.indirim_orani,
+            "sonuc": i.odenecek_tutar,
+            # JS tarafında kolayca formatlayabilmek için ISO formatında gönderiyoruz
+            "tarih": i.tarih.isoformat() 
+        })
+    return jsonify(liste)
 
 @app.route('/odeme', methods=['POST'])
 def api_odeme():

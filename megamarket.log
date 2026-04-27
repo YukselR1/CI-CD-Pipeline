@@ -24,3 +24,107 @@
 2026-04-27 20:25:36,005 - INFO - Ýndirim isteði alýndý: {'toplam_tutar': 100, 'indirim_orani': 10}
 2026-04-27 20:25:36,005 - INFO - Hesaplama baþarýlý. Sonuç: 90.0
 2026-04-27 20:25:36,006 - INFO - 127.0.0.1 - - [27/Apr/2026 20:25:36] "POST /indirim HTTP/1.1" 200 -
+2026-04-27 21:03:56,333 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-27 21:03:56,333 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-27 21:03:56,342 - INFO -  * Restarting with stat
+2026-04-27 21:03:56,780 - WARNING -  * Debugger is active!
+2026-04-27 21:03:56,791 - INFO -  * Debugger PIN: 107-014-658
+2026-04-27 21:04:11,458 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:11] "GET / HTTP/1.1" 200 -
+2026-04-27 21:04:11,788 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-27 21:04:11,802 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:11] "GET /static/script.js HTTP/1.1" 200 -
+2026-04-27 21:04:11,815 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:11] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:04:23,099 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:23] "GET / HTTP/1.1" 200 -
+2026-04-27 21:04:23,142 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-27 21:04:23,157 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:23] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-04-27 21:04:23,214 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:23] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:04:25,278 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:25] "GET / HTTP/1.1" 200 -
+2026-04-27 21:04:25,295 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-27 21:04:25,301 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:25] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-04-27 21:04:25,312 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:25] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:04:55,273 - INFO - Ýndirim isteði alýndý: {'toplam_tutar': 100, 'indirim_orani': 40}
+2026-04-27 21:04:55,280 - INFO - Hesaplama ve kayýt baþarýlý. Sonuç: 60.0
+2026-04-27 21:04:55,280 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:55] "POST /indirim HTTP/1.1" 200 -
+2026-04-27 21:04:55,295 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:55] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:04:58,723 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:58] "GET / HTTP/1.1" 200 -
+2026-04-27 21:04:58,744 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-27 21:04:58,751 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:58] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-04-27 21:04:58,759 - INFO - 127.0.0.1 - - [27/Apr/2026 21:04:58] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:05:09,824 - INFO - Ýndirim isteði alýndý: {'toplam_tutar': 50, 'indirim_orani': 20}
+2026-04-27 21:05:09,830 - INFO - Hesaplama ve kayýt baþarýlý. Sonuç: 40.0
+2026-04-27 21:05:09,830 - INFO - 127.0.0.1 - - [27/Apr/2026 21:05:09] "POST /indirim HTTP/1.1" 200 -
+2026-04-27 21:05:09,843 - INFO - 127.0.0.1 - - [27/Apr/2026 21:05:09] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:07:50,368 - INFO -  * Detected change in 'C:\\Users\\nazlý\\Desktop\\MegaMarket_Backend\\app\\main.py', reloading
+2026-04-27 21:07:50,483 - INFO -  * Restarting with stat
+2026-04-27 21:07:50,940 - WARNING -  * Debugger is active!
+2026-04-27 21:07:50,942 - INFO -  * Debugger PIN: 107-014-658
+2026-04-27 21:07:51,984 - INFO -  * Detected change in 'C:\\Users\\nazlý\\Desktop\\MegaMarket_Backend\\app\\main.py', reloading
+2026-04-27 21:07:52,043 - INFO -  * Restarting with stat
+2026-04-27 21:07:52,521 - WARNING -  * Debugger is active!
+2026-04-27 21:07:52,525 - INFO -  * Debugger PIN: 107-014-658
+2026-04-27 21:08:10,992 - INFO - 127.0.0.1 - - [27/Apr/2026 21:08:10] "GET / HTTP/1.1" 200 -
+2026-04-27 21:08:11,289 - INFO - 127.0.0.1 - - [27/Apr/2026 21:08:11] "GET /static/style.css HTTP/1.1" 200 -
+2026-04-27 21:08:11,310 - INFO - 127.0.0.1 - - [27/Apr/2026 21:08:11] "GET /static/script.js HTTP/1.1" 200 -
+2026-04-27 21:08:11,323 - INFO - 127.0.0.1 - - [27/Apr/2026 21:08:11] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:08:19,951 - INFO - Ýndirim isteði alýndý: {'toplam_tutar': 100, 'indirim_orani': 30}
+2026-04-27 21:08:19,959 - INFO - Hesaplama ve kayýt baþarýlý. Sonuç: 70.0
+2026-04-27 21:08:19,959 - INFO - 127.0.0.1 - - [27/Apr/2026 21:08:19] "POST /indirim HTTP/1.1" 200 -
+2026-04-27 21:08:19,977 - INFO - 127.0.0.1 - - [27/Apr/2026 21:08:19] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:15:16,326 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-04-27 21:15:16,326 - INFO - [33mPress CTRL+C to quit[0m
+2026-04-27 21:15:16,326 - INFO -  * Restarting with stat
+2026-04-27 21:15:16,775 - WARNING -  * Debugger is active!
+2026-04-27 21:15:16,780 - INFO -  * Debugger PIN: 107-014-658
+2026-04-27 21:17:13,820 - INFO - 127.0.0.1 - - [27/Apr/2026 21:17:13] "GET / HTTP/1.1" 200 -
+2026-04-27 21:17:14,119 - INFO - 127.0.0.1 - - [27/Apr/2026 21:17:14] "GET /static/script.js HTTP/1.1" 200 -
+2026-04-27 21:17:14,123 - INFO - 127.0.0.1 - - [27/Apr/2026 21:17:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-27 21:17:14,182 - INFO - 127.0.0.1 - - [27/Apr/2026 21:17:14] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:17:32,266 - INFO - Ýndirim isteði alýndý: {'toplam_tutar': 500, 'indirim_orani': 20}
+2026-04-27 21:17:32,275 - INFO - Hesaplama ve kayýt baþarýlý. Sonuç: 400.0
+2026-04-27 21:17:32,275 - INFO - 127.0.0.1 - - [27/Apr/2026 21:17:32] "POST /indirim HTTP/1.1" 200 -
+2026-04-27 21:17:32,292 - INFO - 127.0.0.1 - - [27/Apr/2026 21:17:32] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:17:56,749 - INFO - Ýndirim isteði alýndý: {'toplam_tutar': 1000, 'indirim_orani': 50}
+2026-04-27 21:17:56,762 - INFO - Hesaplama ve kayýt baþarýlý. Sonuç: 500.0
+2026-04-27 21:17:56,763 - INFO - 127.0.0.1 - - [27/Apr/2026 21:17:56] "POST /indirim HTTP/1.1" 200 -
+2026-04-27 21:17:56,770 - INFO - 127.0.0.1 - - [27/Apr/2026 21:17:56] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:18:00,060 - INFO - 127.0.0.1 - - [27/Apr/2026 21:18:00] "GET / HTTP/1.1" 200 -
+2026-04-27 21:18:00,081 - INFO - 127.0.0.1 - - [27/Apr/2026 21:18:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-27 21:18:00,088 - INFO - 127.0.0.1 - - [27/Apr/2026 21:18:00] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-04-27 21:18:00,098 - INFO - 127.0.0.1 - - [27/Apr/2026 21:18:00] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:20:53,252 - INFO - 127.0.0.1 - - [27/Apr/2026 21:20:53] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:22:48,356 - INFO - 127.0.0.1 - - [27/Apr/2026 21:22:48] "GET / HTTP/1.1" 200 -
+2026-04-27 21:22:48,398 - INFO - 127.0.0.1 - - [27/Apr/2026 21:22:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-27 21:22:48,403 - INFO - 127.0.0.1 - - [27/Apr/2026 21:22:48] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-04-27 21:22:48,467 - INFO - 127.0.0.1 - - [27/Apr/2026 21:22:48] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:22:59,529 - INFO - 127.0.0.1 - - [27/Apr/2026 21:22:59] "GET / HTTP/1.1" 200 -
+2026-04-27 21:22:59,546 - INFO - 127.0.0.1 - - [27/Apr/2026 21:22:59] "GET /static/style.css HTTP/1.1" 200 -
+2026-04-27 21:22:59,551 - INFO - 127.0.0.1 - - [27/Apr/2026 21:22:59] "GET /static/script.js HTTP/1.1" 200 -
+2026-04-27 21:22:59,561 - INFO - 127.0.0.1 - - [27/Apr/2026 21:22:59] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:22:59,562 - INFO - 127.0.0.1 - - [27/Apr/2026 21:22:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-27 21:23:01,451 - INFO - 127.0.0.1 - - [27/Apr/2026 21:23:01] "GET / HTTP/1.1" 200 -
+2026-04-27 21:23:01,475 - INFO - 127.0.0.1 - - [27/Apr/2026 21:23:01] "GET /static/style.css HTTP/1.1" 200 -
+2026-04-27 21:23:01,481 - INFO - 127.0.0.1 - - [27/Apr/2026 21:23:01] "GET /static/script.js HTTP/1.1" 200 -
+2026-04-27 21:23:01,492 - INFO - 127.0.0.1 - - [27/Apr/2026 21:23:01] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:23:01,497 - INFO - 127.0.0.1 - - [27/Apr/2026 21:23:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-27 21:23:29,329 - INFO - 127.0.0.1 - - [27/Apr/2026 21:23:29] "GET / HTTP/1.1" 200 -
+2026-04-27 21:23:29,347 - INFO - 127.0.0.1 - - [27/Apr/2026 21:23:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-04-27 21:23:29,352 - INFO - 127.0.0.1 - - [27/Apr/2026 21:23:29] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-04-27 21:23:29,362 - INFO - 127.0.0.1 - - [27/Apr/2026 21:23:29] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:26:07,447 - INFO -  * Detected change in 'C:\\Users\\nazlý\\Desktop\\MegaMarket_Backend\\app\\main.py', reloading
+2026-04-27 21:26:07,579 - INFO -  * Restarting with stat
+2026-04-27 21:26:08,177 - WARNING -  * Debugger is active!
+2026-04-27 21:26:08,177 - INFO -  * Debugger PIN: 107-014-658
+2026-04-27 21:26:49,587 - INFO - 127.0.0.1 - - [27/Apr/2026 21:26:49] "GET / HTTP/1.1" 200 -
+2026-04-27 21:26:49,874 - INFO - 127.0.0.1 - - [27/Apr/2026 21:26:49] "GET /static/script.js HTTP/1.1" 200 -
+2026-04-27 21:26:49,891 - INFO - 127.0.0.1 - - [27/Apr/2026 21:26:49] "GET /static/style.css HTTP/1.1" 200 -
+2026-04-27 21:26:49,924 - INFO - 127.0.0.1 - - [27/Apr/2026 21:26:49] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:27:26,917 - INFO - Ýndirim isteði alýndý: {'toplam_tutar': 200, 'indirim_orani': 20}
+2026-04-27 21:27:26,925 - INFO - Hesaplama ve kayýt baþarýlý. Sonuç: 160.0
+2026-04-27 21:27:26,925 - INFO - 127.0.0.1 - - [27/Apr/2026 21:27:26] "POST /indirim HTTP/1.1" 200 -
+2026-04-27 21:27:26,940 - INFO - 127.0.0.1 - - [27/Apr/2026 21:27:26] "GET /gecmis HTTP/1.1" 200 -
+2026-04-27 21:33:18,160 - INFO -  * Detected change in 'C:\\Users\\nazlý\\Desktop\\MegaMarket_Backend\\app\\main.py', reloading
+2026-04-27 21:33:18,278 - INFO -  * Restarting with stat
+2026-04-27 21:33:18,790 - WARNING -  * Debugger is active!
+2026-04-27 21:33:18,790 - INFO -  * Debugger PIN: 107-014-658
+2026-04-27 21:33:19,824 - INFO -  * Detected change in 'C:\\Users\\nazlý\\Desktop\\MegaMarket_Backend\\app\\main.py', reloading

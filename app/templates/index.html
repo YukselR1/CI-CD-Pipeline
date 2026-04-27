@@ -17,6 +17,21 @@
                 <p>Ödenecek Tutar: <strong id="final-price">0</strong> TL</p>
             </div>
         </div>
+        <div class="card" style="margin-top: 20px;">
+             <h3>📜 İşlem Geçmişi</h3>
+             <table id="history-table" style="width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr style="border-bottom: 2px solid #ddd;">
+                <th>Tarih</th>
+                <th>Tutar</th>
+                <th>İndirim</th>
+                <th>Sonuç</th>
+            </tr>
+        </thead>
+        <tbody id="history-body">
+            </tbody>
+    </table>
+</div>
     </div>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
