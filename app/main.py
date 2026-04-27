@@ -9,10 +9,14 @@ logging.basicConfig(
     filemode='a' # 'a' (append) modu üzerine ekleyerek devam eder
 )
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from app.payment import indirim_hesapla, odeme_yap
 
 app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return render_template('index.html')
 
 @app.route('/indirim', methods=['POST'])
 def api_indirim():

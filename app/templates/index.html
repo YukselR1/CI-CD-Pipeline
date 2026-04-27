@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>MegaMarket | Ödeme Paneli</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🛒 MegaMarket Ödeme Sistemi</h1>
+        <div class="card">
+            <input type="number" id="total" placeholder="Toplam Tutar (TL)">
+            <input type="number" id="discount" placeholder="İndirim Oranı (%)">
+            <button onclick="hesapla()">Hesapla ve Kaydet</button>
+            
+            <div id="result-box" class="hidden">
+                <p>Ödenecek Tutar: <strong id="final-price">0</strong> TL</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
