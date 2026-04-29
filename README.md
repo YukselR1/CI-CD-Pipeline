@@ -26,3 +26,21 @@ MegaMarket projesinin ödeme ve indirim süreçlerini yöneten, modern bir web a
 3. Bağımlılıkları yükleyin: `pip install -r requirements.txt`
 4. Uygulamayı başlatın: `python -m app.main`
 5. Tarayıcıdan erişin: `http://127.0.0.1:5000`
+
+
+---
+## ⚙️ CI/CD Pipeline & Otomatik Dağıtım Akışı
+
+Bu proje, her kod değişiminde otomatik olarak çalışan ve hatalı kodun yayına alınmasını engelleyen bir **GitHub Actions** iş akışına sahiptir.
+
+### 📊 Akış Şeması (Workflow Diagram)
+
+```mermaid
+graph TD
+    A[💻 Kod Geliştirme] -->|git push| B(🚀 GitHub Actions Tetiklenir)
+    B --> C{🔍 Kod Kontrolü}
+    C -->|❌ Hata Bulundu| D[🛑 İşlem Durduruldu / Geliştiriciye Bildirim]
+    C -->|✅ Hata Yok| E[🧪 Unit Testler Çalıştırılır]
+    E --> F[🐳 Docker Image Build]
+    F --> G[📦 Kesintisiz Güncelleme / Deployment]
+    G --> H[✅ Yeni Sürüm Canlıda!]
