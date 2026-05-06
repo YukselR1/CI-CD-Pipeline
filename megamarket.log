@@ -174,3 +174,26 @@
 2026-04-30 01:35:02,053 - INFO - 127.0.0.1 - - [30/Apr/2026 01:35:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 2026-04-30 01:35:02,059 - INFO - 127.0.0.1 - - [30/Apr/2026 01:35:02] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
 2026-04-30 01:35:02,062 - INFO - 127.0.0.1 - - [30/Apr/2026 01:35:02] "GET /gecmis HTTP/1.1" 200 -
+2026-05-06 20:53:37,361 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-06 20:53:37,361 - INFO - [33mPress CTRL+C to quit[0m
+2026-05-06 20:53:37,368 - INFO -  * Restarting with stat
+2026-05-06 20:53:38,011 - WARNING -  * Debugger is active!
+2026-05-06 20:53:38,019 - INFO -  * Debugger PIN: 107-014-658
+2026-05-06 20:53:59,381 - INFO - 127.0.0.1 - - [06/May/2026 20:53:59] "GET / HTTP/1.1" 200 -
+2026-05-06 20:53:59,793 - INFO - 127.0.0.1 - - [06/May/2026 20:53:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2026-05-06 20:53:59,833 - INFO - 127.0.0.1 - - [06/May/2026 20:53:59] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2026-05-06 20:53:59,853 - INFO - 127.0.0.1 - - [06/May/2026 20:53:59] "GET /gecmis HTTP/1.1" 200 -
+2026-05-06 20:54:00,629 - INFO - 127.0.0.1 - - [06/May/2026 20:54:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-06 20:54:15,910 - INFO - Ýndirim isteði alýndý: {'toplam_tutar': 100, 'indirim_orani': 10}
+2026-05-06 20:54:15,917 - INFO - Hesaplama ve kayýt baþarýlý. Sonuç: 90.0
+2026-05-06 20:54:15,917 - INFO - 127.0.0.1 - - [06/May/2026 20:54:15] "POST /indirim HTTP/1.1" 200 -
+2026-05-06 20:54:15,927 - INFO - 127.0.0.1 - - [06/May/2026 20:54:15] "GET /gecmis HTTP/1.1" 200 -
+2026-05-06 20:56:01,239 - INFO -  * Detected change in 'C:\\Users\\nazlý\\Desktop\\MegaMarket_Backend\\app\\payment.py', reloading
+2026-05-06 20:56:01,384 - INFO -  * Restarting with stat
+2026-05-06 20:56:01,982 - WARNING -  * Debugger is active!
+2026-05-06 20:56:01,987 - INFO -  * Debugger PIN: 107-014-658
+2026-05-06 20:56:03,035 - INFO -  * Detected change in 'C:\\Users\\nazlý\\Desktop\\MegaMarket_Backend\\app\\payment.py', reloading
+2026-05-06 20:56:03,160 - INFO -  * Restarting with stat
+2026-05-06 20:56:03,790 - WARNING -  * Debugger is active!
+2026-05-06 20:56:03,794 - INFO -  * Debugger PIN: 107-014-658
