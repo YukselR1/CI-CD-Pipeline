@@ -34,7 +34,7 @@ with app.app_context():
     db.create_all()
 
 @app.route('/')
-def home():
+deef home():
     return render_template('index.html')
 
 @app.route('/indirim', methods=['POST'])
